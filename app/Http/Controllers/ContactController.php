@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
+use App\Events\SendMailEvent;
 
 class ContactController extends Controller
 {
@@ -17,7 +18,7 @@ class ContactController extends Controller
             'message' => 'required|string',
         ]);
 
-        Mail::to('hathalaldawsary7@gmail.com')->send(new ContactMail($data));
+        SendMailEvent::dispatch($data);
 
         return back()->with('success', 'تم إرسال الرسالة بنجاح, شكرا لثقتكم بهذال الدوسري.');
     }
