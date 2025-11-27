@@ -17,7 +17,7 @@ class ContactController extends Controller
             'message' => 'required|string',
         ]);
 
-        Mail::to(config('mail.from.address'))->send(new ContactMail($data));
+        Mail::to('hathalaldawsary7@gmail.com')->send(new ContactMail($data));
 
         return back()->with('success', 'تم إرسال الرسالة بنجاح, شكرا لثقتكم بهذال الدوسري.');
     }

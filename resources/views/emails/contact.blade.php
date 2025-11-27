@@ -1,14 +1,14 @@
 @component('mail::message')
-رسالة أستشارة قضائية 
+# 📩 رسالة أستشارة جديدة
 
-اسم المرسل:{{ $data['name'] }}  
-البريد الإلكتروني للمرسل: {{ $data['email'] }}  
+<p><strong style="color:#1D4ED8; text-align:right;">اسم المرسل:</strong> {{ $data['name'] }}</p>
+<p><strong style="color:#1D4ED8; text-align:right;">البريد الإلكتروني للمرسل:</strong> {{ $data['email'] }}</p>
 
 @if(!empty($data['phone']))
-رقم الهاتف: {{ $data['phone'] }}  
+<p><strong style="color:#1D4ED8; text-align:right;">رقم الهاتف:</strong> {{ $data['phone'] }}</p>
 @endif
 
-محتوي الرسالة:  
-{{ $data['message'] }}
+<p><strong style="color:#1D4ED8; text-align:right">محتوى الرسالة:</strong><br>
+{{ $data['message'] }}</p>
 
 @endcomponent
