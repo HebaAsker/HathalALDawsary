@@ -16,14 +16,11 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Copy project files
 COPY . .
 
-# Copy .env before generating key
-COPY .env .env
+
 
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
 
-# Generate application key
-RUN php artisan key:generate
 
 # Expose port
 EXPOSE 8000
