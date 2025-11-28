@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>مكتب هذال الدوسري للمحاماة</title>
     <link rel="icon" type="image/png" href="{{ asset('assets/images/photo_2025.png') }}">
-
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
@@ -14,40 +13,22 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 
-<body>
-
-    @include('layouts.nav')
-    @include('layouts.hero')
-    @include('layouts.about')
-    @include('layouts.state')
-    @include('layouts.service')
-    @include('layouts.contact')
-    @include('layouts.footer')
-
+<body> @include('layouts.nav') @include('layouts.hero') @include('layouts.about')
+    @include('layouts.state') @include('layouts.service') @include('layouts.contact') @include('layouts.footer')
     <a href="#" id="scrollToTop"><i class="fas fa-arrow-up"></i></a>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ asset('assets/js/script.js') }}"></script>
-
     <script>
         function sendMail(e) {
             e.preventDefault();
-
-            let name = document.getElementById('name').value;
-            let userEmail = document.getElementById('email').value;
-            let phone = document.getElementById('phone').value;
             let msg = document.getElementById('message').value;
-
-            let body =
-                "الاسم: " + name + "%0A" +
-                "البريد: " + userEmail + "%0A" +
-                "الهاتف: " + phone + "%0A" +
-                "الرسالة: %0A" + msg;
-
-            window.location.href =
+            let phone = document.getElementById('phone').value;
+            let body = "الرسالة: %0A" + msg;
+            "الهاتف: " + phone + "%0A" + window.location.href =
                 "mailto:hathalaldawsary7@gmail.com?subject=رسالة من صفحة الاتصال&body=" + body;
         }
     </script>
 </body>
 
-</html>
+</html> @component('mail::message')
