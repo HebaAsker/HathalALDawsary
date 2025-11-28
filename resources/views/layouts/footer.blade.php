@@ -17,7 +17,7 @@
         <div class="col-md-4 text-right mb-4">
           <h4>تواصل معنا</h4>
           <p>📍 الرياض – حي المعذر الشمالي - شارع التخصصي</p>
-          <p>📞 <a href="tel:0555555555">966-50-044-0038+</a></p>
+          <p>📞 <a href="tel:966500440038">966-50-044-0038+</a></p>
           <p>📧 <a href="mailto:info@lawoffice.com">hathallawfrim@gmail.com</a></p>
           <div class="footer-social mt-3">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
