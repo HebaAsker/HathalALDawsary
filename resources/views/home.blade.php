@@ -28,20 +28,21 @@ function sendMail(e) {
     let phone = document.getElementById('phone').value;
     let msg = document.getElementById('message').value;
 
-    // تجهيز نص الرسالة مع الترميز الصحيح
-    let body =
-        "اسم المرسل: " + encodeURIComponent(name) + "%0A" +
-        "البريد الإلكتروني: " + encodeURIComponent(email) + "%0A" +
-        "رقم الهاتف: " + encodeURIComponent(phone) + "%0A%0A" +
-        "محتوى الرسالة:%0A" + encodeURIComponent(msg);
+    // نص رسالة منسق للـ Gmail
+    let body = 
+        "📌 رسالة جديدة من صفحة الاتصال\n\n" +
+        "👤 الاسم: " + encodeURIComponent(name) + "\n" +
+        "✉️ البريد الإلكتروني: " + encodeURIComponent(email) + "\n" +
+        "📞 رقم الهاتف: " + encodeURIComponent(phone) + "\n\n" +
+        "📝 نص الرسالة:\n" + encodeURIComponent(msg);
 
-    // mailto
     window.location.href =
         "mailto:hathalaldawsary7@gmail.com?subject=" +
-        encodeURIComponent("استفسار قانوني من الموقع الألكتروني للشركة") +
+        encodeURIComponent("رسالة من " + name) +
         "&body=" + body;
 }
 </script>
+
 
 
 </body>
