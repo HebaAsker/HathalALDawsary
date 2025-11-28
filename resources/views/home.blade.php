@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="DL9xbO9WSq8p-RJHXYioiTWKmowiHKo6kIi-tll9Cmw" />
     <title>مكتب هذال الدوسري للمحاماة</title>
     <link rel="icon" type="image/png" href="{{ asset('assets/images/photo_2025.png') }}">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
