@@ -31,4 +31,4 @@
     </script>
 </body>
 
-</html> @component('mail::message')
+</html>
