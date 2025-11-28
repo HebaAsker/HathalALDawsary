@@ -28,20 +28,19 @@ function sendMail(e) {
     let phone = document.getElementById('phone').value;
     let msg = document.getElementById('message').value;
 
-    // نص رسالة منسق للـ Gmail
-    let body = 
-        "📌 رسالة جديدة من صفحة الاتصال\n\n" +
-        "👤 الاسم: " + encodeURIComponent(name) + "\n" +
-        "✉️ البريد الإلكتروني: " + encodeURIComponent(email) + "\n" +
+    // نص رسالة منسق
+    let body =
+        "📌 بيانات المرسل:\n" +
         "📞 رقم الهاتف: " + encodeURIComponent(phone) + "\n\n" +
-        "📝 نص الرسالة:\n" + encodeURIComponent(msg);
+        "📝 محتوى الرسالة:\n" + encodeURIComponent(msg);
 
     window.location.href =
         "mailto:hathalaldawsary7@gmail.com?subject=" +
-        encodeURIComponent("رسالة من " + name) +
+        encodeURIComponent("رسالة من " + name + " - " + email) +
         "&body=" + body;
 }
 </script>
+
 
 
 
