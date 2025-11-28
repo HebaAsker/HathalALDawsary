@@ -20,21 +20,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ asset('assets/js/script.js') }}"></script>
     <script>
-    function sendMail(e) {
-        e.preventDefault();
+function sendMail(e) {
+    e.preventDefault();
 
-        let msg = document.getElementById('message').value;
-        let phone = document.getElementById('phone').value;
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let phone = document.getElementById('phone').value;
+    let msg = document.getElementById('message').value;
 
-        // تجهيز نص الرسالة
-        let body = "الرسالة: %0A" + msg + "%0A%0A" +
-                   "الهاتف: " + phone;
+    // تجهيز نص الرسالة مع الترميز الصحيح
+    let body =
+        "اسم المرسل: " + encodeURIComponent(name) + "%0A" +
+        "البريد الإلكتروني: " + encodeURIComponent(email) + "%0A" +
+        "رقم الهاتف: " + encodeURIComponent(phone) + "%0A%0A" +
+        "محتوى الرسالة:%0A" + encodeURIComponent(msg);
 
-        // التحويل لبرنامج البريد
-        window.location.href =
-            "mailto:hathalaldawsary7@gmail.com?subject=رسالة من صفحة الاتصال&body=" + body;
-    }
+    // mailto
+    window.location.href =
+        "mailto:hathalaldawsary7@gmail.com?subject=" +
+        encodeURIComponent("رسالة من صفحة الاتصال") +
+        "&body=" + body;
+}
 </script>
+
 
 </body>
 
