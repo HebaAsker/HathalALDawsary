@@ -38,7 +38,7 @@ function sendMail(e) {
     // mailto
     window.location.href =
         "mailto:hathalaldawsary7@gmail.com?subject=" +
-        encodeURIComponent("رسالة من صفحة الاتصال") +
+        encodeURIComponent("استفسار قانوني من الموقع الألكتروني للشركة") +
         "&body=" + body;
 }
 </script>
