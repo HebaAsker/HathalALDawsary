@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- الصفحة الرئيسية -->
+    <url>
+        <loc>https://hathalaldawsary.onrender.com/</loc>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- من نحن -->
+    <url>
+        <loc>https://hathalaldawsary.onrender.com/#about</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- الإنجازات -->
+    <url>
+        <loc>https://hathalaldawsary.onrender.com/#stats</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- الخدمات -->
+    <url>
+        <loc>https://hathalaldawsary.onrender.com/#section-services</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- تواصل معنا -->
+    <url>
+        <loc>https://hathalaldawsary.onrender.com/#section-contact</loc>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>

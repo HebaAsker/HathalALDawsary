@@ -4,8 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- إثبات ملكية جوجل -->
     <meta name="google-site-verification" content="DL9xbO9WSq8p-RJHXYioiTWKmowiHKo6kIi-tll9Cmw" />
-    <title>مكتب هذال الدوسري للمحاماة</title>
+
+    <!-- العنوان الرئيسي -->
+    <title>مكتب هذال الدوسري للمحاماة - خدمات قانونية في الرياض</title>
+
+    <!-- الوصف التعريفي -->
+    <meta name="description" content="مكتب هذال الدوسري للمحاماة يقدم خدمات قانونية محترفة في الرياض، تواصل معنا للحصول على الاستشارة القانونية المناسبة.">
+
     <link rel="icon" type="image/png" href="{{ asset('assets/images/photo_2025.png') }}">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -13,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
+
 
 <body> @include('layouts.nav') @include('layouts.hero') @include('layouts.about')
     @include('layouts.state') @include('layouts.service') @include('layouts.contact') @include('layouts.footer')
