@@ -26,7 +26,7 @@
             let phone = document.getElementById('phone').value;
             let body = "الرسالة: %0A" + msg;
             "الهاتف: " + phone + "%0A" + window.location.href =
-                "mailto:hathalaldawsary7@gmail.com?subject=رسالة استفسار من الموقع الألكتروني&body=" + body;
+                "mailto:hathalaldawsary7@gmail.com?subject=رسالة من صفحة الاتصال&body=" + body;
         }
     </script>
 </body>
